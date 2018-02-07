@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey"
+    tools:context="com.example.administrator.demoapp.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorBlack"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="16dp">
+
+            <ImageView
+                android:id="@+id/ivScan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/ivPayCode"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iconfont_scan" />
+
+            <TextView
+                android:id="@+id/textScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="@id/ivScan"
+                app:layout_constraintTop_toBottomOf="@id/ivScan" />
+
+            <ImageView
+                android:id="@+id/ivPayCode"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                app:layout_constraintEnd_toStartOf="@+id/ivDiscount"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivScan"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iconfont_paycode" />
+            <TextView
+                android:id="@+id/textPayCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Code"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="@id/ivPayCode"
+                app:layout_constraintTop_toBottomOf="@id/ivPayCode" />
+
+            <ImageView
+                android:id="@+id/ivDiscount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                app:layout_constraintEnd_toStartOf="@+id/ivDangmianfu"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivPayCode"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iconfont_discount" />
+            <TextView
+                android:id="@+id/textDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="@id/ivDiscount"
+                app:layout_constraintTop_toBottomOf="@id/ivDiscount" />
+
+            <ImageView
+                android:id="@+id/ivDangmianfu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivDiscount"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iconfont_dangmianfu_yellow" />
+            <TextView
+                android:id="@+id/textDianmianful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mianfu"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="@id/ivDangmianfu"
+                app:layout_constraintTop_toBottomOf="@id/ivDiscount" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ConstraintLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/iconfont_huabei" />
+    </ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
