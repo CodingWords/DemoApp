@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <ImageView
+        android:id="@+id/iv_front_huabei"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_confont_koubeilogo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconfont_huabei" />
+
+
+    <ImageView
+        android:id="@+id/iv_confont_koubeilogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_icon_social_team_black"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_front_huabei"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconfont_koubeilogo" />
+
+    <ImageView
+        android:id="@+id/iv_icon_social_team_black"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_iconfont_zhuanzhang"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_confont_koubeilogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_social_team_black" />
+
+    <Button
+        android:id="@+id/unredMsgButton"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon_social_team_black"
+        app:layout_constraintTop_toTopOf="@+id/iv_icon_social_team_black"
+        android:background="@drawable/circle"
+        android:text="2"
+        android:textColor="@color/colorWhite"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/circle_red" />
+
+    <ImageView
+        android:id="@+id/iv_iconfont_zhuanzhang"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon_social_team_black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconfont_zhuanzhang" />
+
+</android.support.constraint.ConstraintLayout>
