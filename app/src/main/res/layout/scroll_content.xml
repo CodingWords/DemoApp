@@ -4,106 +4,506 @@
     android:id="@+id/scroll_content"
     app:layout_constraintStart_toStartOf="parent"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:fillViewport="true"
-    android:background="@color/colorGreen">
-    <android.support.constraint.ConstraintLayout
-        android:background="@color/colorGreen"
+    android:layout_height="400dp"
+    android:fillViewport="true">
+    <LinearLayout
+
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="wrap_content">
         <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/GridLayout1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:columnCount="2"
-            android:rowCount="6"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:stretchMode="columnWidth"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:columnCount="4"
+            android:rowCount="4"
             android:orientation="horizontal"
             tools:context=".GridXMLActivity" >
-            <Button
-                 android:id="@+id/button1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-            android:layout_gravity="left|top"
-            android:text="Button" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/imagea"
+                    android:src="@drawable/iconfont_caipiao"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
+                <TextView
+                    android:id="@+id/myImageViewTexta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
+                <ImageView
+                    android:id="@+id/image"
+                    android:src="@drawable/iconfont_chuxing"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
+                <ImageView
+                    android:id="@+id/image2"
+                    android:src="@drawable/iconfont_juanzeng"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
 
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
+                <TextView
+                    android:id="@+id/myImageViewText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
+                <ImageView
+                    android:id="@+id/image3"
+                    android:src="@drawable/iconfont_jipiao"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
 
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="left|top"
-                android:text="Button" />
+                <TextView
+                    android:id="@+id/myImageViewText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:src="@drawable/iconfont_fuwuchuang"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:src="@drawable/iconfont_huabei"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:src="@drawable/iconfont_mayijubao_copy"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image7"
+                    android:src="@drawable/iconfont_tianmao"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image8"
+                    android:src="@drawable/iconfont_kuaidi"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image9"
+                    android:src="@drawable/iconfont_taobao"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image10"
+                    android:src="@drawable/iconfont_gupiao"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:padding="1dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image11"
+                    android:src="@drawable/iconfont_zhuanzhang"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
         </GridLayout>
-    </android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageBanner"
+            android:src="@drawable/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/GridLayout2"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:verticalSpacing="2dp"
+            android:horizontalSpacing="2dp"
+            android:stretchMode="columnWidth"
+            android:gravity="left"
+
+            android:columnCount="4"
+            android:rowCount="1"
+            android:orientation="horizontal"
+            tools:context=".GridXMLActivity" >
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image21"
+                    android:src="@drawable/iconfont_zhuanzhang"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image22"
+                    android:src="@drawable/iconfont_gupiao"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image23"
+                    android:src="@drawable/iconfont_jipiao"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:weightSum="8"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image234"
+                    android:src="@drawable/iconfont_caipiao"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/myImageViewText324"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Image Text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </GridLayout>
+
+    </LinearLayout>
 
 </ScrollView>
